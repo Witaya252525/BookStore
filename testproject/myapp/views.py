@@ -22,9 +22,12 @@ def index(request):
        name = 'Witaya'
        age = '30'
        email = 'witayachai@gmail.com'
+       #create activit list of 4 sport 
+       activities = ['football','basketball','badminton','tennis']
+
        # sent out as dictionary
-       my_dict = {'id':id , 'name':name , 'age':age , 'email':email}
-       return render(request, 'index.html', my_dict)    
+       my_dict = {'id':id , 'name':name , 'age':age , 'email':email , 'activities':activities}
+       return render(request, 'index.html', context=my_dict )    
      
 
 

@@ -17,6 +17,20 @@
         <h1> {{name}} </h1>
         <h1> {{age}}        </h1>
 
+ <ul>
+    {% for x in activities %}
+     <li> {{x}} </li>
+    {% endfor %} 
+ </ul>   
+        {% comment %} {% for x in activities %}
+            <h1> {{x}} </h1>
+        {% endfor %}     {% endcomment %}
+
+      
+        <a href="{% url 'myapp:index' %}">IIndex</a> <br>
+
+        <a href="{% url 'myapp:hello' id=230  %}">Hello</a><br>   
+        <a href="{% url 'myapp:article' year=2000  slug='wi-taya'  %}">Go to article </a>
 
 
 
