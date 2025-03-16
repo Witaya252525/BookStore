@@ -9,3 +9,6 @@ def hello(request , id):
     return HttpResponse(f"Hello, {id}")
 
     # return HttpResponse("Witaya chaison")
+def article (request ,year ,slug):
+    return HttpResponse(f" This is article year is {year} and slug is {slug}")
+
