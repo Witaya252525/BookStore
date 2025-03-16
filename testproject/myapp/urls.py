@@ -21,10 +21,14 @@ from myapp import views
 urlpatterns = [
     
 
-    path('', views.witaya),
-    path('hello/<int:id>', views.hello),
+    path('', views.index , name='index'),
+    path('witaya/', views.witaya ,),
+    path('hello/<int:id>', views.hello ),
     # add repath with year and slug
     # add repath with year and slug
-    re_path(r'article/(?P<year>[0-9]{4})/(?P<slug>[\w-]+)', views.article)  
+    re_path(r'article/(?P<year>[0-9]{4})/(?P<slug>[\w-]+)', views.article ,name='article'),  
+    # reate path for index
+
+
     
 ]
