@@ -1,15 +1,14 @@
-<!DOCTYPE html>
+   {% extends 'layouts/base.html' %}
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> Test Project </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-      
+  <title>{% block title %} index Page {% endblock title %}</title> 
+
+
+
+        {% block content %}
+
+
+        
+       
         
         <h1>Test Project</h1>
         <p> This is a test project for the Django framework. </p>
@@ -33,8 +32,6 @@
         <a href="{% url 'myapp:article' year=2000  slug='wi-taya'  %}">Go to article </a>
 
 
+     {% endblock %}
 
-
-        <script src="" async defer></script>
-    </body>
-</html>
+       
